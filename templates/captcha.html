@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>SalC1</title>
+		<link rel="icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/icon">
+		<link rel="stylesheet" href="{{url_for('static', filename='captcha.css')}}">
+		<meta charset="utf-8">
+	</head>
+
+	<body >
+		<div class='stage'>
+			<div class='captcha'>
+				<p class="twcenmt">Sal<span class="c1"><sup>C1</sup></span> Discord Server</span></p><br>
+				<p class="captcha-title">Please verify that you are a human:</span></p><br>
+				<form action="/getinvite" method="post">
+					{{ form.csrf_token }}
+					{{ form.recaptcha }}^
+					<br>
+					{{ form.submit }}
+				</form>
+			</div>
+		</div>
+	</body>
+	<footer class='footer'>
+		<div>
+			<p class='twcenmt' style="font-size:16px">Go to: <b><a href='http://www.salc1.com'>SalC1.com</a></b> instead?</p>
+		</div>
+	</footer>
+
+</html>

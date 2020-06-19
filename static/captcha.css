@@ -1,0 +1,127 @@
+/* Page Width */
+	.stage {
+		width: 75vw;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.captcha {
+		position: absolute;
+		font-family: "TW Cen MT";
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -90%);
+	}
+	.captcha-title {
+		color: #FFDA20;
+		font-size: 20px;
+		text-align: center;
+		text-shadow: 2px 2px 0px #383838;
+	}
+	.captcha-error {
+		color: #D00000;
+		font-size: 18px;
+		text-align: center;
+		text-shadow: 2px 2px 0px #383838;
+	}
+	.captcha img {
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+	}
+	.stage .twcenmt {
+		font-size: 34px;
+		text-align: center;
+		text-shadow: 2px 2px 0px #383838;
+	}
+	.top {
+		width: 100%;
+		height: 40px;
+		border: solid 1px white;
+	}
+	.left {
+		width: 30%;
+		height: 100%;
+		float:left;
+	}
+	.main {
+		float: left;
+		height: 100%;
+		width: 70%;
+		border:  solid 1px black;
+	}
+ 
+/* Link Colors */
+	/* unvisited link */
+		a:link {
+			color: #FFDA20;
+		}
+	/* visited link */
+		a:visited {
+			color: #FFDA20;
+		}
+	/* mouse over link */
+		a:hover {
+			color: #FFDA20;
+		}
+	/* selected link */
+		a:active {
+			color: #FF0000;
+		}
+
+/* Font Stuff */
+	@font-face {
+		font-family: "TW Cen MT";
+		src: url("twcenmt.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "c1";
+		src: url("c1.ttf") format("truetype");
+	}
+	p.twcenmt { 
+		font-family: "TW Cen MT";
+		color: #FFDA20;
+	}
+	p.twcenmtred { 
+		font-family: "TW Cen MT";
+		color: #D00000;
+	}
+	p.twcenmtlightgray { 
+		font-family: "TW Cen MT";
+		color: #A4A4A4;
+	}
+	p.bold {
+		font-weight: bold;
+	}
+	.c1 {
+		font-family: "c1";
+		color: #FFDA20;
+		display: inline;
+	}
+	p {
+		display: block;
+		margin-top: 0em;
+		margin-bottom: 0em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		margin: auto;
+		left: 0;
+		right: 0;
+		height: 2.5rem; 
+	}
+	.footer div {
+		text-align: center;
+	}
+	.footer .twcenmt {
+		font-size: 20px;
+	}
+
+/* Background Image */
+	body {
+		background-image: url("background.png");
+		background-color: #000000;
+	}
